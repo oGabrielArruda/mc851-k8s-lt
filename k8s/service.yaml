@@ -1,0 +1,18 @@
+# NodePort: o k6 (no host) acessa <minikube ip>:30080 e o kube-proxy distribui
+# entre os pods. Não usar `kubectl port-forward` nos testes: ele fixa um único pod.
+apiVersion: v1
+kind: Service
+metadata:
+  name: fib-server
+  namespace: hpa-lab
+  labels:
+    app: fib-server
+spec:
+  type: NodePort
+  selector:
+    app: fib-server
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      nodePort: 30080

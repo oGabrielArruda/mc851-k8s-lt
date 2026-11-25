@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fib-server
+  namespace: hpa-lab
+  labels:
+    app: fib-server
+spec:
+  replicas: 1 # o HPA assume o controle a partir daqui
+  selector:
+    matchLabels:
+      app: fib-server
+  template:
+    metadata:
+      labels:
+        app: fib-server
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+        - name: fib-server
+          image: fib-server:v1
+          imagePullPolicy: Never # imagem buildada dentro do minikube
+          ports:
+            - name: http
+              containerPort: 8080
+          env:
+            # fib(32) ≈ 12 ms de CPU/req → ~10 req/s por pod no alvo de 50%
+            # e ~42 req/s no limite de 500m (8 réplicas ≈ 340 req/s)
+            - name: FIB_N
+              value: "32"
+            - name: SHUTDOWN_DRAIN_SECONDS
+              value: "5"
+          resources:
+            # requests.cpu é a base do cálculo de utilização do HPA (uso / request)
+            requests:
+              cpu: 250m
+              memory: 32Mi
+            limits:
+              cpu: 500m
+              memory: 64Mi
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+            periodSeconds: 2
+            failureThreshold: 1
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            periodSeconds: 10
+            failureThreshold: 3
