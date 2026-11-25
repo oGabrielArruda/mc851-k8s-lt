@@ -1,0 +1,47 @@
+# kube-prometheus-stack enxuto para o laboratório do HPA (minikube, nó único).
+alertmanager:
+  enabled: false
+
+# Componentes do control plane que no minikube escutam só em localhost
+# (gerariam alvos "down" sem utilidade para o experimento).
+kubeEtcd:
+  enabled: false
+kubeScheduler:
+  enabled: false
+kubeControllerManager:
+  enabled: false
+kubeProxy:
+  enabled: false
+
+prometheus:
+  service:
+    type: NodePort
+    nodePort: 30090
+  prometheusSpec:
+    scrapeInterval: 5s        # resolução fina para medir tempos de reação
+    evaluationInterval: 15s
+    retention: 15d
+    enableRemoteWriteReceiver: true   # recebe as métricas do k6
+    # seleciona ServiceMonitors de qualquer namespace/label (inclui o da app)
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+    resources:
+      requests: { cpu: 200m, memory: 512Mi }
+      limits: { memory: 1536Mi }
+
+grafana:
+  adminPassword: admin
+  service:
+    type: NodePort
+    nodePort: 30030
+  sidecar:
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+      searchNamespace: ALL
+  defaultDashboardsEnabled: true
+
+kube-state-metrics:
+  prometheus:
+    monitor:
+      interval: 5s

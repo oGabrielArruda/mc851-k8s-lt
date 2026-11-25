@@ -1,0 +1,13 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: fib-server
+  namespace: hpa-lab
+spec:
+  selector:
+    matchLabels:
+      app: fib-server
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 5s

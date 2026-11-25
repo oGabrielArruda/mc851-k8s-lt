@@ -19,6 +19,11 @@ minikube start -p "$PROFILE" \
   --kubernetes-version="$K8S_VERSION" \
   "$@"
 
+# Com o driver docker, o minikube registra --cpus mas não limita a CPU do
+# container do nó (só a memória). Aplicamos o limite diretamente no Docker.
+# Obs.: o kubelet continua reportando a CPU do host como capacidade do nó.
+docker update --cpus="$CPUS" "$PROFILE" >/dev/null
+
 minikube -p "$PROFILE" addons enable metrics-server
 # O addon do minikube usa --metric-resolution=60s; o padrão upstream do
 # metrics-server é 15s. Usamos o padrão upstream (variável: METRIC_RESOLUTION).
