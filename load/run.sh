@@ -12,7 +12,9 @@ PROFILE="${PROFILE:-hpa}"
 HOST="${HOST:-$(minikube -p "$PROFILE" ip)}"
 
 export K6_PROMETHEUS_RW_SERVER_URL="http://$HOST:30090/api/v1/write"
-export K6_PROMETHEUS_RW_TREND_STATS="p(50),p(95),p(99),avg,max"
+# Histogramas nativos: permitem calcular percentis por janela de tempo.
+# (Os "trend stats" padrão do k6 são acumulados desde o início do teste.)
+export K6_PROMETHEUS_RW_TREND_AS_NATIVE_HISTOGRAM=true
 export K6_PROMETHEUS_RW_PUSH_INTERVAL="5s"
 
 exec k6 run --quiet --no-usage-report \

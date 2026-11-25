@@ -83,10 +83,9 @@ panels = [
         for q in (0.5, 0.95, 0.99)
     ], unit="s", desc="Tempo de processamento dentro do pod (inclui espera por CPU throttled)."),
     panel(6, "Latência no cliente (k6)", 12, 16, [
-        ("max(k6_http_req_duration_p50)", "p50"),
-        ("max(k6_http_req_duration_p95)", "p95"),
-        ("max(k6_http_req_duration_p99)", "p99"),
-    ], unit="s", desc="Inclui rede, fila no kernel e tempo de conexão."),
+        (f"histogram_quantile({q}, sum(rate(k6_http_req_duration_seconds{W})))", f"p{int(q * 100)}")
+        for q in (0.5, 0.95, 0.99)
+    ], unit="s", desc="Inclui rede, fila e conexão. Requisições que estouram o timeout contam como 5 s."),
     panel(7, "CPU por pod", 0, 24, [
         (f'sum by (pod) (rate(container_cpu_usage_seconds_total{{{APP}}}{W}))', "{{pod}}"),
     ], unit="cores", stack=True, desc="Empilhado: a altura total é a CPU usada pela aplicação."),
