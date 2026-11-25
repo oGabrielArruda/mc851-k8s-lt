@@ -21,7 +21,7 @@ func TestFib(t *testing.T) {
 func TestHandlers(t *testing.T) {
 	var ready atomic.Bool
 	ready.Store(true)
-	srv := httptest.NewServer(newMux(10, "pod-teste", &ready))
+	srv := httptest.NewServer(newMux(10, 2, "pod-teste", &ready))
 	defer srv.Close()
 
 	cases := []struct {

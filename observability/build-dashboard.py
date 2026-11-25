@@ -94,9 +94,11 @@ panels = [
         (f'sum by (pod) (rate(container_cpu_cfs_throttled_periods_total{{{APP}}}{W})) '
          f'/ sum by (pod) (rate(container_cpu_cfs_periods_total{{{APP}}}{W}))', "{{pod}}"),
     ], unit="percentunit", desc="Fração dos períodos CFS em que o pod bateu no limit de CPU."),
-    panel(9, "Requisições em andamento", 0, 32, [
-        (f'sum by (pod) (fib_requests_in_flight{{{NS}}})', "{{pod}}"),
-    ], stack=True),
+    panel(9, "Requisições no servidor", 0, 32, [
+        (f'sum(fib_requests_in_flight{{{NS}}}) - sum(fib_requests_running{{{NS}}})', "na fila"),
+        (f'sum(fib_requests_running{{{NS}}})', "calculando"),
+        (f'histogram_quantile(0.95, sum by (le) (rate(fib_queue_wait_seconds_bucket{{{NS}}}{W})))', "espera p95 (s)"),
+    ], desc="Cada pod calcula no máximo MAX_CONCURRENCY requisições; as demais esperam na fila."),
     panel(10, "VUs do k6", 12, 32, [
         ("sum(k6_vus)", "VUs ativos"),
     ]),

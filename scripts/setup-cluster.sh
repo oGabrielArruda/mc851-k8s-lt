@@ -11,7 +11,7 @@ PROFILE="${PROFILE:-hpa}"
 CPUS="${CPUS:-6}"
 MEMORY="${MEMORY:-8192}"
 K8S_VERSION="${K8S_VERSION:-v1.37.0}"
-IMAGE="fib-server:v1"
+IMAGE="fib-server:v2"
 
 minikube start -p "$PROFILE" \
   --driver=docker \
@@ -39,7 +39,7 @@ kubectl -n kube-system rollout status deploy/metrics-server --timeout=120s
 echo ">> buildando $IMAGE e carregando no minikube"
 docker build -t "$IMAGE" "$ROOT/app"
 minikube -p "$PROFILE" image load "$IMAGE" --overwrite
-minikube -p "$PROFILE" image ls | grep -q "fib-server:v1" || { echo "imagem não carregada"; exit 1; }
+minikube -p "$PROFILE" image ls | grep -q "$IMAGE" || { echo "imagem não carregada"; exit 1; }
 
 kubectl apply -f "$ROOT/k8s/namespace.yaml"
 kubectl apply -f "$ROOT/k8s/deployment.yaml" -f "$ROOT/k8s/service.yaml"

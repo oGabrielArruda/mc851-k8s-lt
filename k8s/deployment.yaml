@@ -18,7 +18,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: fib-server
-          image: fib-server:v1
+          image: fib-server:v2
           imagePullPolicy: Never # imagem buildada dentro do minikube
           ports:
             - name: http
@@ -38,15 +38,19 @@ spec:
             limits:
               cpu: 500m
               memory: 64Mi
+          # Probes tolerantes: sob sobrecarga a latência sobe, e probes com
+          # timeout de 1 s derrubavam pods saudáveis (cascata; ver diário, Fase 4).
           readinessProbe:
             httpGet:
               path: /readyz
               port: http
             periodSeconds: 2
-            failureThreshold: 1
+            timeoutSeconds: 2
+            failureThreshold: 3
           livenessProbe:
             httpGet:
               path: /healthz
               port: http
             periodSeconds: 10
-            failureThreshold: 3
+            timeoutSeconds: 5
+            failureThreshold: 6

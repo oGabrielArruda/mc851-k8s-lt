@@ -16,6 +16,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"runtime"
 	"strconv"
 	"sync/atomic"
 	"syscall"
@@ -42,9 +43,24 @@ var (
 
 	inFlight = promauto.NewGauge(prometheus.GaugeOpts{
 		Name: "fib_requests_in_flight",
-		Help: "Requisições /fib em processamento.",
+		Help: "Requisições /fib no servidor (calculando + aguardando na fila).",
+	})
+
+	running = promauto.NewGauge(prometheus.GaugeOpts{
+		Name: "fib_requests_running",
+		Help: "Requisições /fib calculando neste momento (limitado por MAX_CONCURRENCY).",
+	})
+
+	queueWait = promauto.NewHistogram(prometheus.HistogramOpts{
+		Name:    "fib_queue_wait_seconds",
+		Help:    "Tempo de espera na fila antes de começar o cálculo.",
+		Buckets: []float64{.001, .005, .01, .025, .05, .1, .25, .5, 1, 2, 3, 5, 10},
 	})
 )
+
+// statusClientClosed: o cliente desistiu (timeout) enquanto a requisição
+// aguardava na fila; o cálculo não é feito (mesmo código usado pelo nginx).
+const statusClientClosed = 499
 
 // fib é propositalmente exponencial: o objetivo é consumir CPU.
 func fib(n int) int {
@@ -61,7 +77,11 @@ func envInt(key string, def int) int {
 	return def
 }
 
-func fibHandler(defaultN int, hostname string) http.HandlerFunc {
+// fibHandler limita quantos cálculos rodam ao mesmo tempo (sem). As demais
+// requisições esperam na fila sem consumir CPU. Sem esse limite, sob
+// sobrecarga centenas de goroutines dividem a CPU do pod e até /healthz e
+// /readyz passam de 1 s, fazendo as probes derrubarem o pod (ver diário).
+func fibHandler(defaultN int, hostname string, sem chan struct{}) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		start := time.Now()
 		inFlight.Inc()
@@ -83,15 +103,27 @@ func fibHandler(defaultN int, hostname string) http.HandlerFunc {
 			n = v
 		}
 
+		select {
+		case sem <- struct{}{}:
+		case <-r.Context().Done():
+			code = statusClientClosed
+			queueWait.Observe(time.Since(start).Seconds())
+			return
+		}
+		queueWait.Observe(time.Since(start).Seconds())
+		running.Inc()
 		result := fib(n)
+		running.Dec()
+		<-sem
+
 		w.Header().Set("X-Pod", hostname) // permite verificar o balanceamento entre pods
 		fmt.Fprintf(w, "fib(%d)=%d\n", n, result)
 	}
 }
 
-func newMux(defaultN int, hostname string, ready *atomic.Bool) *http.ServeMux {
+func newMux(defaultN, maxConcurrency int, hostname string, ready *atomic.Bool) *http.ServeMux {
 	mux := http.NewServeMux()
-	mux.HandleFunc("GET /fib", fibHandler(defaultN, hostname))
+	mux.HandleFunc("GET /fib", fibHandler(defaultN, hostname, make(chan struct{}, maxConcurrency)))
 	mux.HandleFunc("GET /healthz", func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusOK)
 	})
@@ -112,6 +144,8 @@ func main() {
 	// Tempo entre sair do Service (readiness falha) e parar de aceitar conexões.
 	// Reduz erros durante o scale-down, quando o pod recebe SIGTERM.
 	drainDelay := time.Duration(envInt("SHUTDOWN_DRAIN_SECONDS", 5)) * time.Second
+	// GOMAXPROCS já respeita o limit de CPU do cgroup (Go >= 1.25).
+	maxConcurrency := envInt("MAX_CONCURRENCY", runtime.GOMAXPROCS(0))
 	hostname, _ := os.Hostname()
 
 	var ready atomic.Bool
@@ -119,12 +153,13 @@ func main() {
 
 	srv := &http.Server{
 		Addr:              fmt.Sprintf(":%d", port),
-		Handler:           newMux(defaultN, hostname, &ready),
+		Handler:           newMux(defaultN, maxConcurrency, hostname, &ready),
 		ReadHeaderTimeout: 5 * time.Second,
 	}
 
 	go func() {
-		log.Printf("ouvindo em :%d (FIB_N=%d, pod=%s)", port, defaultN, hostname)
+		log.Printf("ouvindo em :%d (FIB_N=%d, MAX_CONCURRENCY=%d, GOMAXPROCS=%d, pod=%s)",
+			port, defaultN, maxConcurrency, runtime.GOMAXPROCS(0), hostname)
 		if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 			log.Fatal(err)
 		}
