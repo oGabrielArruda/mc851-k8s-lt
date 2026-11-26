@@ -1,0 +1,4846 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:36:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-7bdt9",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62645",
+                "uid": "c1eff09d-8ab2-4aff-b51f-6447e1018e93"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:36:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:36:31Z",
+                "name": "fib-server-78d9fc954d-7bdt9.18eb5d99c26b4631",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64122",
+                "uid": "abfb5756-cdf2-42a4-8a10-bcf24f891b98"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:36:33Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-7bdt9",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62645",
+                "uid": "c1eff09d-8ab2-4aff-b51f-6447e1018e93"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:36:35Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:36:33Z",
+                "name": "fib-server-78d9fc954d-7bdt9.18eb5d9a28fc13ce",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64130",
+                "uid": "a6b032e2-1cea-4814-a785-997ed382524e"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9gz72",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64515",
+                "uid": "e57f890e-2668-4532-be66-e54d3fc5c405"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-9gz72 to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-9gz72.18eb5de0bcd6ed13",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64526",
+                "uid": "6c395c87-0ba9-4488-829f-6ba591a9d594"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9gz72",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64519",
+                "uid": "e57f890e-2668-4532-be66-e54d3fc5c405"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-9gz72.18eb5de0d5891ced",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64535",
+                "uid": "3d47303c-f272-42af-a8dc-128726c5b6bd"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9gz72",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64519",
+                "uid": "e57f890e-2668-4532-be66-e54d3fc5c405"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-9gz72.18eb5de0d704c157",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64539",
+                "uid": "c761a0c2-2b3c-49b2-868a-d10a070e4556"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9gz72",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64519",
+                "uid": "e57f890e-2668-4532-be66-e54d3fc5c405"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-9gz72.18eb5de0d9d2ad56",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64544",
+                "uid": "8c59eb8a-6375-4d02-b381-d77ab71ac321"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9gz72",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64519",
+                "uid": "e57f890e-2668-4532-be66-e54d3fc5c405"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server-78d9fc954d-9gz72.18eb5e5d6d94a8d6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65110",
+                "uid": "17edaa79-4129-40a1-b44c-9780941d151f"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9gz72",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64519",
+                "uid": "e57f890e-2668-4532-be66-e54d3fc5c405"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:36Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:32Z",
+                "name": "fib-server-78d9fc954d-9gz72.18eb5e5da61906b4",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65136",
+                "uid": "7af3a650-bdda-40b6-97b6-a31de4661b7b"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:35:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9t7t5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62642",
+                "uid": "9cbf3e14-0589-40dc-8c05-75cf29eafc37"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:35:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:35:31Z",
+                "name": "fib-server-78d9fc954d-9t7t5.18eb5d8bc7db0d00",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64043",
+                "uid": "3b8b0615-8a0f-4bc6-9126-bde83068c296"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:35:33Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-9t7t5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62642",
+                "uid": "9cbf3e14-0589-40dc-8c05-75cf29eafc37"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:35:35Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:35:33Z",
+                "name": "fib-server-78d9fc954d-9t7t5.18eb5d8c30cc65e0",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64051",
+                "uid": "e0546be4-2a56-44af-a314-3cd75646373d"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-bc6cg",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65480",
+                "uid": "93308770-ffee-4501-918c-6facbeb58fcd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-bc6cg to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-bc6cg.18eb5e9d86dee965",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65487",
+                "uid": "8a805a83-719d-46fe-9cd5-ec9315988ca6"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-bc6cg",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65484",
+                "uid": "93308770-ffee-4501-918c-6facbeb58fcd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-bc6cg.18eb5e9d9edc7314",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65492",
+                "uid": "61ec218f-4709-4793-b96b-6e4fda7c3d9b"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-bc6cg",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65484",
+                "uid": "93308770-ffee-4501-918c-6facbeb58fcd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-bc6cg.18eb5e9da0031175",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65497",
+                "uid": "2f80ca61-c8ff-487c-be83-515791c29e77"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-bc6cg",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65484",
+                "uid": "93308770-ffee-4501-918c-6facbeb58fcd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-bc6cg.18eb5e9da2f072fa",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65498",
+                "uid": "0745a20e-e232-4de3-8f45-a067d1978914"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:17:04Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-bc6cg",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65484",
+                "uid": "93308770-ffee-4501-918c-6facbeb58fcd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:17:04Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:17:04Z",
+                "name": "fib-server-78d9fc954d-bc6cg.18eb5fd03971a319",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66964",
+                "uid": "b4858e94-6c48-4979-aa4d-dcb6e26868a1"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:17:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-bc6cg",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65484",
+                "uid": "93308770-ffee-4501-918c-6facbeb58fcd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:17:07Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:17:05Z",
+                "name": "fib-server-78d9fc954d-bc6cg.18eb5fd081fc37dd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66972",
+                "uid": "b1478272-1750-4e67-a811-eca86a921bec"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:07:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66332",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:38Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-j57ns to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:07:38Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5f4c88b9a955",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66336",
+                "uid": "0a958fb1-f0bc-4999-b89a-08881eb8426f"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:07:39Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66333",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:39Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:07:39Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5f4ca1ce0d75",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66342",
+                "uid": "5996a474-c0f6-49b3-928b-b413b205a77a"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:07:39Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66333",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:39Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:07:39Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5f4ca2ca922b",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66344",
+                "uid": "634bc123-83c2-4e04-8580-7b34db31d0b1"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:07:39Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66333",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:39Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:07:39Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5f4ca589d601",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66345",
+                "uid": "bf8ab1fd-eefb-4cad-81ab-12dd5e263769"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:07:39Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66333",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:39Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.136:8080/readyz\": dial tcp 10.244.0.136:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:07:39Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5f4ca5a4c9c8",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66346",
+                "uid": "f6c6a404-56eb-4866-b8cb-563f5f8e2346"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:14:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66333",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:14:34Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:14:34Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5fad42a512e8",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66769",
+                "uid": "6570a4ec-63f1-4f13-a46e-fb43f4b92dbf"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:14:35Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-j57ns",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66333",
+                "uid": "3c4ec593-4c03-4a80-8aba-f9206d4aa445"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:14:37Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:14:35Z",
+                "name": "fib-server-78d9fc954d-j57ns.18eb5fad900e7c35",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66779",
+                "uid": "fd3453dd-174b-4494-b90c-95fc57bf0755"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jrwvk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64458",
+                "uid": "f973cd13-73ea-49af-89f0-5419d856609b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-jrwvk to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-jrwvk.18eb5ddd3dd158c5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64464",
+                "uid": "03cdbe45-ae08-4256-b2f8-d8a2a6aae28c"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jrwvk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64462",
+                "uid": "f973cd13-73ea-49af-89f0-5419d856609b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-jrwvk.18eb5ddd55fa6bd3",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64469",
+                "uid": "f5cf22ab-9e9b-4035-bca2-e72c2a15f039"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jrwvk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64462",
+                "uid": "f973cd13-73ea-49af-89f0-5419d856609b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-jrwvk.18eb5ddd56c2eb99",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64473",
+                "uid": "70d393b8-fb2b-42e9-8cd9-a14fc946663b"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jrwvk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64462",
+                "uid": "f973cd13-73ea-49af-89f0-5419d856609b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-jrwvk.18eb5ddd59ebcdfb",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64475",
+                "uid": "4a988481-5fec-4f5f-b3e5-9df38251ffa9"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jrwvk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64462",
+                "uid": "f973cd13-73ea-49af-89f0-5419d856609b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:46Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:46Z",
+                "name": "fib-server-78d9fc954d-jrwvk.18eb5e60ecffeaa1",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65178",
+                "uid": "39d94630-0227-4df4-8706-d266c6b18d2c"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jrwvk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64462",
+                "uid": "f973cd13-73ea-49af-89f0-5419d856609b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:51Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:47Z",
+                "name": "fib-server-78d9fc954d-jrwvk.18eb5e612252b39a",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65188",
+                "uid": "1970e19a-7595-4043-9606-cd95b28fa156"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jz6mn",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62545",
+                "uid": "0d1b3776-b485-4b5e-ba47-974f894d5dbf"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:15Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:15Z",
+                "name": "fib-server-78d9fc954d-jz6mn.18eb5cee879a3c92",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63254",
+                "uid": "0afc0f89-03fa-4638-aefc-c26695ff6e04"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:17Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-jz6mn",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62545",
+                "uid": "0d1b3776-b485-4b5e-ba47-974f894d5dbf"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:19Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:17Z",
+                "name": "fib-server-78d9fc954d-jz6mn.18eb5ceec9fb2b1e",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63263",
+                "uid": "1c156aed-2919-41da-9dfa-e3ee03660bf8"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-k8zkj",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65548",
+                "uid": "cdaf6ad0-e7fc-4e5f-b61d-4534c98b22f8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-k8zkj to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server-78d9fc954d-k8zkj.18eb5ea48532d665",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65553",
+                "uid": "44b6b4c9-7fad-4271-a2f5-8e34d15e92e6"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-k8zkj",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65550",
+                "uid": "cdaf6ad0-e7fc-4e5f-b61d-4534c98b22f8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server-78d9fc954d-k8zkj.18eb5ea49ccf96ff",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65557",
+                "uid": "51c4bda9-b472-475d-ba2c-3b46ae9695b7"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-k8zkj",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65550",
+                "uid": "cdaf6ad0-e7fc-4e5f-b61d-4534c98b22f8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server-78d9fc954d-k8zkj.18eb5ea49d92737b",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65559",
+                "uid": "0ad53856-7089-47b5-b442-17d585de9880"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-k8zkj",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65550",
+                "uid": "cdaf6ad0-e7fc-4e5f-b61d-4534c98b22f8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server-78d9fc954d-k8zkj.18eb5ea49ffceea0",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65560",
+                "uid": "6d679640-bb2d-4e36-8fee-badb2328ec64"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:18:04Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-k8zkj",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65550",
+                "uid": "cdaf6ad0-e7fc-4e5f-b61d-4534c98b22f8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:18:04Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:18:04Z",
+                "name": "fib-server-78d9fc954d-k8zkj.18eb5fde363c55a2",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67043",
+                "uid": "567f0a3a-66fe-4823-a0da-a72e7019297d"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:18:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-k8zkj",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65550",
+                "uid": "cdaf6ad0-e7fc-4e5f-b61d-4534c98b22f8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:18:07Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:18:05Z",
+                "name": "fib-server-78d9fc954d-k8zkj.18eb5fde7b3495ca",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67052",
+                "uid": "22d35c1e-844e-4e72-a8c4-7dac7e9d5be9"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lfdkl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63370",
+                "uid": "ba5a8350-68a0-4399-8556-ea65f30c1ab2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-lfdkl to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-lfdkl.18eb5d00017881e3",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63376",
+                "uid": "658a2e7f-4138-4bac-875c-83a9363750f0"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lfdkl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63373",
+                "uid": "ba5a8350-68a0-4399-8556-ea65f30c1ab2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-lfdkl.18eb5d0019e18eca",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63382",
+                "uid": "ae74e962-8012-4386-8eb1-3e83cd2894bb"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lfdkl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63373",
+                "uid": "ba5a8350-68a0-4399-8556-ea65f30c1ab2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-lfdkl.18eb5d001ae6b38f",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63386",
+                "uid": "84a92227-fdfb-43bb-abed-b3c87b7e13c0"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lfdkl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63373",
+                "uid": "ba5a8350-68a0-4399-8556-ea65f30c1ab2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-lfdkl.18eb5d001d7822fd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63387",
+                "uid": "cb5a3d2e-483f-43cf-b813-a8e90c58eab4"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:34:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lfdkl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63373",
+                "uid": "ba5a8350-68a0-4399-8556-ea65f30c1ab2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:34:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:34:31Z",
+                "name": "fib-server-78d9fc954d-lfdkl.18eb5d7dcd53e560",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63963",
+                "uid": "98037532-662a-4956-a610-54447c401a01"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:34:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lfdkl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63373",
+                "uid": "ba5a8350-68a0-4399-8556-ea65f30c1ab2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:34:35Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:34:31Z",
+                "name": "fib-server-78d9fc954d-lfdkl.18eb5d7dd8278b55",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63971",
+                "uid": "0452d704-04ce-4a24-a3d2-74d8e55796fb"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lmtll",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64510",
+                "uid": "052b8c6e-464a-4eb4-8772-47daaf13476a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-lmtll to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-lmtll.18eb5de0bc82090a",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64517",
+                "uid": "57d0e621-e4c5-4bb1-98cc-3d1ce2f4d658"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lmtll",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64512",
+                "uid": "052b8c6e-464a-4eb4-8772-47daaf13476a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-lmtll.18eb5de0d4c640cb",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64531",
+                "uid": "05c97556-f74c-4b0b-933b-47e03f5ab418"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lmtll",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64512",
+                "uid": "052b8c6e-464a-4eb4-8772-47daaf13476a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-lmtll.18eb5de0d609461c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64537",
+                "uid": "c170f171-f4f5-4203-b53f-fbcdae6d54b6"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lmtll",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64512",
+                "uid": "052b8c6e-464a-4eb4-8772-47daaf13476a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-lmtll.18eb5de0d944b2df",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64542",
+                "uid": "69abd279-8cf4-4626-9aeb-cae5ab85a0f1"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:16Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lmtll",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64512",
+                "uid": "052b8c6e-464a-4eb4-8772-47daaf13476a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:16Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:16Z",
+                "name": "fib-server-78d9fc954d-lmtll.18eb5e59ee3e61cd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65070",
+                "uid": "ee57f4f5-a101-4e76-9f83-a4233d4c21e7"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-lmtll",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64512",
+                "uid": "052b8c6e-464a-4eb4-8772-47daaf13476a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:20Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:18Z",
+                "name": "fib-server-78d9fc954d-lmtll.18eb5e5a63383472",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65080",
+                "uid": "5bcd579a-f04c-4b0a-8840-80293a456afd"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-m6n2s",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64456",
+                "uid": "706c996a-a114-41ab-aabb-8ca2d37d4c36"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-m6n2s to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-m6n2s.18eb5ddd3d8d4b92",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64461",
+                "uid": "fb7c2419-40d5-4ecc-969d-6f10b67185ad"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-m6n2s",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64459",
+                "uid": "706c996a-a114-41ab-aabb-8ca2d37d4c36"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-m6n2s.18eb5ddd560e0d46",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64470",
+                "uid": "972e6262-4532-46c7-b9fb-1f8a4e45b243"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-m6n2s",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64459",
+                "uid": "706c996a-a114-41ab-aabb-8ca2d37d4c36"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-m6n2s.18eb5ddd571f9428",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64474",
+                "uid": "63da8b65-644f-49cc-acfd-966dad29b331"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-m6n2s",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64459",
+                "uid": "706c996a-a114-41ab-aabb-8ca2d37d4c36"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d-m6n2s.18eb5ddd59ec0253",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64476",
+                "uid": "bbb6380f-d3dc-45b3-b178-072d709705ac"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-m6n2s",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64459",
+                "uid": "706c996a-a114-41ab-aabb-8ca2d37d4c36"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server-78d9fc954d-m6n2s.18eb5e5d6d9e7534",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65117",
+                "uid": "6cb4c1d0-8e7b-4f4f-805b-a07d40cd5478"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:33Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-m6n2s",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64459",
+                "uid": "706c996a-a114-41ab-aabb-8ca2d37d4c36"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:35Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:33Z",
+                "name": "fib-server-78d9fc954d-m6n2s.18eb5e5ddff25f64",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65129",
+                "uid": "891f1dd8-e896-4b21-9ba8-0fa511d0658c"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-n6wx6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62490",
+                "uid": "a0df03ab-b530-4cfa-b81c-e3909d15ce2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:46Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:46Z",
+                "name": "fib-server-78d9fc954d-n6wx6.18eb5cf58507ff51",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63305",
+                "uid": "d9a86288-e92c-487a-8a5f-76f558a1e356"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-n6wx6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62490",
+                "uid": "a0df03ab-b530-4cfa-b81c-e3909d15ce2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:49Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:47Z",
+                "name": "fib-server-78d9fc954d-n6wx6.18eb5cf5c3c64cc2",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63314",
+                "uid": "abc38b3f-ac8d-45bb-8630-2a1bbcb7ca87"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:51Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-n6wx6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62490",
+                "uid": "a0df03ab-b530-4cfa-b81c-e3909d15ce2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:51Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.119:8080/readyz\": dial tcp 10.244.0.119:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:51Z",
+                "name": "fib-server-78d9fc954d-n6wx6.18eb5cf6b235637e",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63317",
+                "uid": "649f0ea4-da5d-49c4-8b32-da33862ce24e"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:37:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-q7qvl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62548",
+                "uid": "fbab382f-43a7-4ddf-987c-4e7661a1e3b4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:37:46Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:37:46Z",
+                "name": "fib-server-78d9fc954d-q7qvl.18eb5dab3b6cb61c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64218",
+                "uid": "daac4f08-9ff4-44d9-9e3c-ee8a61f8cb9d"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:37:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-q7qvl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62548",
+                "uid": "fbab382f-43a7-4ddf-987c-4e7661a1e3b4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:37:51Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:37:47Z",
+                "name": "fib-server-78d9fc954d-q7qvl.18eb5dab61da59af",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64226",
+                "uid": "0f93d6da-74e9-4a3a-b4dc-7cce6b21621e"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-qddrd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65606",
+                "uid": "3b1fa06c-b56e-4263-a9fd-4c183b9c41dd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:56:07Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-qddrd to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server-78d9fc954d-qddrd.18eb5eab856c7db2",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65611",
+                "uid": "4a136306-648b-47b9-a08f-e56bcd72ab2d"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-qddrd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65609",
+                "uid": "3b1fa06c-b56e-4263-a9fd-4c183b9c41dd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:56:07Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server-78d9fc954d-qddrd.18eb5eab9d553586",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65615",
+                "uid": "3420b762-c7e3-4b67-ab64-cfa8f247e76b"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-qddrd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65609",
+                "uid": "3b1fa06c-b56e-4263-a9fd-4c183b9c41dd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:56:07Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server-78d9fc954d-qddrd.18eb5eab9e11cb53",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65617",
+                "uid": "5aa45ab2-af17-4646-82e3-f5fbdc401742"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-qddrd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65609",
+                "uid": "3b1fa06c-b56e-4263-a9fd-4c183b9c41dd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:56:07Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server-78d9fc954d-qddrd.18eb5eaba08ad834",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65618",
+                "uid": "6e662b91-6c3b-435e-a0f4-97081596ba88"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:15:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-qddrd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65609",
+                "uid": "3b1fa06c-b56e-4263-a9fd-4c183b9c41dd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:15:49Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:15:49Z",
+                "name": "fib-server-78d9fc954d-qddrd.18eb5fbebe1ad193",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66863",
+                "uid": "9166a38e-67b5-4727-b12d-b8a7bcad2c00"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:15:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-qddrd",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65609",
+                "uid": "3b1fa06c-b56e-4263-a9fd-4c183b9c41dd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:15:53Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:15:49Z",
+                "name": "fib-server-78d9fc954d-qddrd.18eb5fbed566960a",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66875",
+                "uid": "6121920a-ba29-4f7a-a245-0030fcb1dbc8"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rdvbq",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65478",
+                "uid": "0d30d7cb-1ddf-480a-853c-92ebaa705d3e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-rdvbq to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-rdvbq.18eb5e9d86b45b7f",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65485",
+                "uid": "6c743a70-6407-450d-8ae7-e91b60f4bd99"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rdvbq",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65482",
+                "uid": "0d30d7cb-1ddf-480a-853c-92ebaa705d3e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-rdvbq.18eb5e9d9eea22b9",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65493",
+                "uid": "a77430ff-96a2-401f-91bd-7fa3944102d9"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rdvbq",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65482",
+                "uid": "0d30d7cb-1ddf-480a-853c-92ebaa705d3e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-rdvbq.18eb5e9d9ff3dcb6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65496",
+                "uid": "16afa4c2-ff64-4e3a-9ff4-7e734aa6bd6f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rdvbq",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65482",
+                "uid": "0d30d7cb-1ddf-480a-853c-92ebaa705d3e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d-rdvbq.18eb5e9da2f19374",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65499",
+                "uid": "d4f49bff-b748-4aff-bdfe-46bcce04613f"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:05:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rdvbq",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65482",
+                "uid": "0d30d7cb-1ddf-480a-853c-92ebaa705d3e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:05:48Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:05:48Z",
+                "name": "fib-server-78d9fc954d-rdvbq.18eb5f32e4c2766c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66202",
+                "uid": "dd447128-ed8c-4247-ad5d-c1d25685f91e"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:05:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rdvbq",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65482",
+                "uid": "0d30d7cb-1ddf-480a-853c-92ebaa705d3e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:05:53Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:05:49Z",
+                "name": "fib-server-78d9fc954d-rdvbq.18eb5f331d63bf06",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66213",
+                "uid": "b43b42c2-94e1-4261-834a-f06476ad176d"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rztwk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63369",
+                "uid": "39a64c08-00bd-4a20-906a-1967a6b63555"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-rztwk to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-rztwk.18eb5d0001538ec4",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63374",
+                "uid": "c44bcbb1-30fe-4639-8bc1-6aeed8b94918"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rztwk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63371",
+                "uid": "39a64c08-00bd-4a20-906a-1967a6b63555"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-rztwk.18eb5d0019d0e7b2",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63381",
+                "uid": "fe1f3f04-0745-4297-a295-29e70c231e3f"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rztwk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63371",
+                "uid": "39a64c08-00bd-4a20-906a-1967a6b63555"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-rztwk.18eb5d001ac5dc3c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63385",
+                "uid": "1c8e11b0-695c-498c-8239-6b537c172c1a"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:25:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rztwk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63371",
+                "uid": "39a64c08-00bd-4a20-906a-1967a6b63555"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:25:31Z",
+                "name": "fib-server-78d9fc954d-rztwk.18eb5d001d795c63",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63388",
+                "uid": "a2e3e3e6-9736-4d23-bcaa-efbe8417efb5"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:33:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rztwk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63371",
+                "uid": "39a64c08-00bd-4a20-906a-1967a6b63555"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:33:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:33:31Z",
+                "name": "fib-server-78d9fc954d-rztwk.18eb5d6fd373c0b6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63878",
+                "uid": "7884472d-f78c-429c-ba0e-19e63f4491fc"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:33:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-rztwk",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63371",
+                "uid": "39a64c08-00bd-4a20-906a-1967a6b63555"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:33:35Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:33:31Z",
+                "name": "fib-server-78d9fc954d-rztwk.18eb5d6fdfe735dc",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63888",
+                "uid": "31e50130-d863-49d0-96d9-e069a5a299ca"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65422",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-szk47 to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5e968852822e",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65427",
+                "uid": "06fcfae6-1bb3-4dd0-9cc6-e19afaffc089"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65425",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5e969fdf0453",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65431",
+                "uid": "cecc007b-01ce-4953-9b56-d88005759660"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65425",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5e96a09a95da",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65433",
+                "uid": "bed1e59e-abfa-4f18-8715-4000ec8413d9"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65425",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5e96a38d27b3",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65434",
+                "uid": "df258d17-31f5-46f9-aca8-4f9cee3b5d4b"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:19:04Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65425",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:19:04Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:19:04Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5fec3288b7c5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67125",
+                "uid": "0f205fec-b84a-4d1d-9f3b-b2dc52691406"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:19:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65425",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:19:07Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:19:05Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5fec6f540182",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67134",
+                "uid": "ad9526bb-580c-4122-bf7e-8c74a0c49c6f"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:19:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-szk47",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65425",
+                "uid": "f381a235-b91d-4237-bbee-e25898a4d4cd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:19:09Z",
+            "message": "Readiness probe failed: Get \"http://10.244.0.131:8080/readyz\": dial tcp 10.244.0.131:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:19:09Z",
+                "name": "fib-server-78d9fc954d-szk47.18eb5fed5dbaac8d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67137",
+                "uid": "e2b37e46-b9a7-4d89-a687-ea21dfa9d746"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-w9kjl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64514",
+                "uid": "007fc649-6f80-433e-9dbc-ca81ace96dfd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Successfully assigned hpa-lab/fib-server-78d9fc954d-w9kjl to hpa",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-w9kjl.18eb5de0bcd63ff3",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64523",
+                "uid": "448e25fe-cbc0-4558-8392-8c30001e28e2"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-w9kjl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64520",
+                "uid": "007fc649-6f80-433e-9dbc-ca81ace96dfd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container image \"fib-server:v2\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-w9kjl.18eb5de0d5130c7a",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64533",
+                "uid": "8ea648dc-5dad-459f-975d-2094d45a3379"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-w9kjl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64520",
+                "uid": "007fc649-6f80-433e-9dbc-ca81ace96dfd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-w9kjl.18eb5de0d69a2d0e",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64538",
+                "uid": "67d29fa1-5bc3-41b6-a9f8-e24fa1f17ebb"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-w9kjl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64520",
+                "uid": "007fc649-6f80-433e-9dbc-ca81ace96dfd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d-w9kjl.18eb5de0d944b2cb",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64541",
+                "uid": "cf794ea5-1838-4059-8169-eeb6a3e87523"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-w9kjl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64520",
+                "uid": "007fc649-6f80-433e-9dbc-ca81ace96dfd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Stopping container fib-server",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server-78d9fc954d-w9kjl.18eb5e5d6d95448b",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65114",
+                "uid": "fbbff9a8-2237-4864-9a50-d71348e6c987"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{fib-server}",
+                "kind": "Pod",
+                "name": "fib-server-78d9fc954d-w9kjl",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64520",
+                "uid": "007fc649-6f80-433e-9dbc-ca81ace96dfd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:36Z",
+            "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:32Z",
+                "name": "fib-server-78d9fc954d-w9kjl.18eb5e5da599ca10",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65133",
+                "uid": "06de0a68-d4e3-4f2d-a7fd-89c9bde73029"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "hpa",
+            "source": {
+                "component": "kubelet",
+                "host": "hpa"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:15Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63246",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:15Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-jz6mn",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:15Z",
+                "name": "fib-server-78d9fc954d.18eb5cee87831ce8",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63250",
+                "uid": "c199458a-c539-4f62-9b98-19fa5e607ebc"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63297",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:24:46Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-n6wx6",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:46Z",
+                "name": "fib-server-78d9fc954d.18eb5cf584f7e082",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63301",
+                "uid": "632e0dde-06ba-48a6-8a4e-48738063bd80"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:33:31Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63872",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:33:31Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-rztwk",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:33:31Z",
+                "name": "fib-server-78d9fc954d.18eb5d6fd35f2091",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63876",
+                "uid": "78f7e0fe-e943-4a76-80e9-fd1a0f60c2ca"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:34:31Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63954",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:34:31Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-lfdkl",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:34:31Z",
+                "name": "fib-server-78d9fc954d.18eb5d7dcd3e298f",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63959",
+                "uid": "43a16e55-db3d-4c15-bca5-08c139cf3580"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:37:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64210",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:37:46Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-q7qvl",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:37:46Z",
+                "name": "fib-server-78d9fc954d.18eb5dab3b582819",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64214",
+                "uid": "47e3d3b5-ed15-4ce5-840f-75eb426046dc"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64452",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Created pod: fib-server-78d9fc954d-m6n2s",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d.18eb5ddd3d57c25c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64457",
+                "uid": "d955d62c-2753-457e-9d52-3c452ab35781"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64452",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Created pod: fib-server-78d9fc954d-jrwvk",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server-78d9fc954d.18eb5ddd3d8bd5db",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64460",
+                "uid": "e247758b-06c8-4cd3-b320-244df1c6dbce"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64508",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Created pod: fib-server-78d9fc954d-lmtll",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d.18eb5de0bc548e93",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64513",
+                "uid": "eb2a6f17-9b36-47ff-805a-f64c0c63881d"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64508",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Created pod: fib-server-78d9fc954d-w9kjl",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d.18eb5de0bc9424ae",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64518",
+                "uid": "ccec7f95-7ae2-439b-bc03-c80218cf8842"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64508",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Created pod: fib-server-78d9fc954d-9gz72",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server-78d9fc954d.18eb5de0bc95c0a3",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64522",
+                "uid": "60511153-f8f8-44c5-9635-5700e0bdd585"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:16Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65063",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:16Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-lmtll",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:16Z",
+                "name": "fib-server-78d9fc954d.18eb5e59ee254b3e",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65067",
+                "uid": "08f4716c-bc35-4b86-8e17-a3cde8d0510e"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65100",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-9gz72",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server-78d9fc954d.18eb5e5d6d71c5d5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65107",
+                "uid": "acc9528d-70e1-4579-94e3-e7bbd5bfe11a"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65100",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-w9kjl",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server-78d9fc954d.18eb5e5d6d743406",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65111",
+                "uid": "a19482db-a0bf-4d14-95c2-b7d24faf0174"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65100",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-m6n2s",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server-78d9fc954d.18eb5e5d6d837153",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65116",
+                "uid": "da1e00a8-4c43-47b2-94b8-5024a640a57d"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65170",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:46Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-jrwvk",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:46Z",
+                "name": "fib-server-78d9fc954d.18eb5e60ecee2de0",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65174",
+                "uid": "bcd7ef0c-3410-4538-a403-d097606b21c4"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65419",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "Created pod: fib-server-78d9fc954d-szk47",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server-78d9fc954d.18eb5e968808be5f",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65423",
+                "uid": "3656e761-0c21-478b-9a56-21a7a21d1d77"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65475",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Created pod: fib-server-78d9fc954d-rdvbq",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d.18eb5e9d866cd391",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65479",
+                "uid": "4d4de950-48de-4796-8c32-d3debbd55e46"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65475",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Created pod: fib-server-78d9fc954d-bc6cg",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server-78d9fc954d.18eb5e9d86a817c3",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65483",
+                "uid": "953c6cb0-13d5-42be-8065-6e6ade24db7d"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65544",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "Created pod: fib-server-78d9fc954d-k8zkj",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server-78d9fc954d.18eb5ea48506073b",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65549",
+                "uid": "3cffeaf8-2af6-413b-91b3-ef0145b5b902"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65603",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:56:07Z",
+            "message": "Created pod: fib-server-78d9fc954d-qddrd",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server-78d9fc954d.18eb5eab84e1a5cc",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65608",
+                "uid": "326057a2-7977-4ba3-9997-4689d72a14c8"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:05:48Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66196",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:05:48Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-rdvbq",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:05:48Z",
+                "name": "fib-server-78d9fc954d.18eb5f32e4b04b79",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66200",
+                "uid": "263b4d81-db82-4f4b-bc0e-be4a142f7376"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:07:38Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66329",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:38Z",
+            "message": "Created pod: fib-server-78d9fc954d-j57ns",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:07:38Z",
+                "name": "fib-server-78d9fc954d.18eb5f4c8887daf6",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66334",
+                "uid": "04c3b90c-fae1-428c-b900-e98b9ac266a9"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:14:34Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66760",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:14:34Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-j57ns",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:14:34Z",
+                "name": "fib-server-78d9fc954d.18eb5fad428f9997",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66765",
+                "uid": "7d7701af-87ce-46b4-9779-4456086e3662"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:15:49Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66857",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:15:49Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-qddrd",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:15:49Z",
+                "name": "fib-server-78d9fc954d.18eb5fbebe1a30ad",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66861",
+                "uid": "1483c707-4dde-45f3-95f1-12cc6d2ed65f"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:17:04Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66956",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:17:04Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-bc6cg",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:17:04Z",
+                "name": "fib-server-78d9fc954d.18eb5fd0395b3892",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66960",
+                "uid": "11d13cc0-33ae-4a0c-bc49-b6c098e7714f"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:18:04Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67034",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:18:04Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-k8zkj",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:18:04Z",
+                "name": "fib-server-78d9fc954d.18eb5fde3621b31a",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67039",
+                "uid": "a56ed0e1-43a0-46ea-95c0-c8ab56dd9c77"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:19:04Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "fib-server-78d9fc954d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67117",
+                "uid": "ebbc2851-9c0c-40f7-acbb-443160cd244d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:19:04Z",
+            "message": "Deleted pod: fib-server-78d9fc954d-szk47",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:19:04Z",
+                "name": "fib-server-78d9fc954d.18eb5fec3276b32f",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67121",
+                "uid": "fa44dae6-ea8c-46ac-9e86-dc128eb82ed3"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 9,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T16:00:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "60917",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:33:31Z",
+            "message": "Scaled down replica set fib-server-78d9fc954d from 6 to 5",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T17:51:43Z",
+                "name": "fib-server.18eb5510e2aed59b",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63873",
+                "uid": "3245887b-51a7-4b34-bf80-2ca0c7ecec89"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 7,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T16:00:22Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63294",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:34:31Z",
+            "message": "Scaled down replica set fib-server-78d9fc954d from 5 to 4",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:46Z",
+                "name": "fib-server.18eb55146188af95",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63957",
+                "uid": "9676a044-c6ea-40ef-8eb2-a0b398699906"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T16:28:38Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64207",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:37:46Z",
+            "message": "Scaled down replica set fib-server-78d9fc954d from 2 to 1",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:37:46Z",
+                "name": "fib-server.18eb569f43c1c2c5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64213",
+                "uid": "d6d075c3-9fda-4070-a2fd-4071d36a122c"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:14:30Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "62618",
+                "uid": "bc248827-af6b-4cc1-bcf9-92ba7936657b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:25:31Z",
+            "message": "New size: 6; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:14:30Z",
+                "name": "fib-server.18eb5c663e8a3db9",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63367",
+                "uid": "9c41ebb6-e868-4c34-bf8d-ad1d9f795b36"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:15Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63230",
+                "uid": "bc248827-af6b-4cc1-bcf9-92ba7936657b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:33:31Z",
+            "message": "New size: 5; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:15Z",
+                "name": "fib-server.18eb5cee870e34e9",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63871",
+                "uid": "53a55710-60fd-40f9-888d-9eb1b26dbadc"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:24:45Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63281",
+                "uid": "bc248827-af6b-4cc1-bcf9-92ba7936657b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:34:31Z",
+            "message": "New size: 4; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:24:45Z",
+                "name": "fib-server.18eb5cf5847c0dd8",
+                "namespace": "hpa-lab",
+                "resourceVersion": "63955",
+                "uid": "6e43acfb-7a2c-4110-8cc8-32517acc9905"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:35:31Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64021",
+                "uid": "bc248827-af6b-4cc1-bcf9-92ba7936657b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:35:31Z",
+            "message": "New size: 3; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:35:31Z",
+                "name": "fib-server.18eb5d8bc759fc4c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64036",
+                "uid": "d0622564-800d-4202-b4b8-60c54037deb9"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:36:31Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64100",
+                "uid": "bc248827-af6b-4cc1-bcf9-92ba7936657b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:36:31Z",
+            "message": "New size: 2; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:36:31Z",
+                "name": "fib-server.18eb5d99c1e34ddf",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64115",
+                "uid": "ac6dc02d-f04f-4f25-8655-8b5dbe8987bb"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:37:46Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64191",
+                "uid": "bc248827-af6b-4cc1-bcf9-92ba7936657b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:37:46Z",
+            "message": "New size: 1; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:37:46Z",
+                "name": "fib-server.18eb5dab3ae82cbf",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64209",
+                "uid": "ed39ccf1-35a0-4429-8e56-3e6416007434"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64406",
+                "uid": "13a97957-8227-4f8f-80fd-de41a9329b39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "New size: 3; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server.18eb5ddd3c6a4f7d",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64451",
+                "uid": "846e219b-4e28-4bec-b1cb-d2f38b1b3479"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64449",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:21Z",
+            "message": "Scaled up replica set fib-server-78d9fc954d from 1 to 3",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:21Z",
+                "name": "fib-server.18eb5ddd3cdd1d18",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64453",
+                "uid": "0fcc5bc9-e5c6-493a-8ef5-3a8c6223ddb4"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64494",
+                "uid": "13a97957-8227-4f8f-80fd-de41a9329b39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "New size: 6; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server.18eb5de0bbe5c429",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64506",
+                "uid": "ef6606b5-120f-46bb-b0b3-272db7975cd3"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:41:36Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64505",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:41:36Z",
+            "message": "Scaled up replica set fib-server-78d9fc954d from 3 to 6",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:41:36Z",
+                "name": "fib-server.18eb5de0bc233520",
+                "namespace": "hpa-lab",
+                "resourceVersion": "64509",
+                "uid": "af0aabfd-b310-4b40-9935-cabb60ef3ac7"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:16Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65036",
+                "uid": "13a97957-8227-4f8f-80fd-de41a9329b39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:16Z",
+            "message": "New size: 5; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:16Z",
+                "name": "fib-server.18eb5e59edb0b0c2",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65062",
+                "uid": "06a7c3ba-b5ba-4ae6-8718-f6bd85278037"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:16Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65060",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:14:34Z",
+            "message": "Scaled down replica set fib-server-78d9fc954d from 6 to 5",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:16Z",
+                "name": "fib-server.18eb5e59edefc70b",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66763",
+                "uid": "400aa658-b0af-4aad-b2bd-e192a6b22de1"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65081",
+                "uid": "13a97957-8227-4f8f-80fd-de41a9329b39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "New size: 2; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server.18eb5e5d6d016882",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65098",
+                "uid": "5f737734-d1a6-43f7-ab3b-dd746ddbb940"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:31Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65097",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:31Z",
+            "message": "Scaled down replica set fib-server-78d9fc954d from 5 to 2",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:31Z",
+                "name": "fib-server.18eb5e5d6d32ceea",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65101",
+                "uid": "00b276ab-fbea-4d42-80c2-d46a9d190cc5"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:46Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65139",
+                "uid": "13a97957-8227-4f8f-80fd-de41a9329b39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:50:46Z",
+            "message": "New size: 1; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:46Z",
+                "name": "fib-server.18eb5e60ec7c8d1c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65168",
+                "uid": "b1928f4c-bf4a-4728-ad76-40b864a414dc"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:50:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65167",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:19:04Z",
+            "message": "Scaled down replica set fib-server-78d9fc954d from 2 to 1",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:50:46Z",
+                "name": "fib-server.18eb5e60ecbd484c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67118",
+                "uid": "b9407389-f8e8-4f77-beb7-eaf4bdf415bc"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65388",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "New size: 2; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server.18eb5e968789aae8",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65418",
+                "uid": "92dc83ad-5407-44a0-94bd-caa743d9b421"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:54:37Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65416",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:54:37Z",
+            "message": "Scaled up replica set fib-server-78d9fc954d from 1 to 2",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:54:37Z",
+                "name": "fib-server.18eb5e9687c81f64",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65420",
+                "uid": "6f8057b9-62bc-4959-be69-7f7ad9acc570"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65455",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "New size: 4; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server.18eb5e9d85eedacc",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65473",
+                "uid": "ebdcf75d-a17c-464b-8ba0-f867f401dc3e"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65472",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:07Z",
+            "message": "Scaled up replica set fib-server-78d9fc954d from 2 to 4",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:07Z",
+                "name": "fib-server.18eb5e9d862ca962",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65476",
+                "uid": "a50af9d9-0272-4b34-8666-a9de46a12e15"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65525",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "New size: 5; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server.18eb5ea4845f05aa",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65545",
+                "uid": "3ed92c5d-29c1-40dc-b49f-3c8a3a9471a6"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:55:37Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65542",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T18:55:37Z",
+            "message": "Scaled up replica set fib-server-78d9fc954d from 4 to 5",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:55:37Z",
+                "name": "fib-server.18eb5ea484bb641a",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65546",
+                "uid": "656cbfa2-5f4c-4f96-aad7-0381a9deb936"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65581",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:38Z",
+            "message": "New size: 6; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server.18eb5eab82f42fd5",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66328",
+                "uid": "9f0c9f77-e8d5-4a3a-9d38-9a4f3003e46a"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T18:56:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "65600",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:07:38Z",
+            "message": "Scaled up replica set fib-server-78d9fc954d from 5 to 6",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T18:56:07Z",
+                "name": "fib-server.18eb5eab83392e6c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66330",
+                "uid": "4f8f2c82-a6f5-4b5f-9683-744e657aa274"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:05:48Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66183",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:14:34Z",
+            "message": "New size: 5; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:05:48Z",
+                "name": "fib-server.18eb5f32e43de2c1",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66761",
+                "uid": "53c23d93-55b7-411c-b198-ae43d59f99ec"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:15:49Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66844",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:15:49Z",
+            "message": "New size: 4; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:15:49Z",
+                "name": "fib-server.18eb5fbebd95f488",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66856",
+                "uid": "87bebc2f-69ed-4d88-a9cd-1ed8e40db4c5"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:15:49Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66854",
+                "uid": "ae501dcc-e5b5-45cc-a521-81febb1b68d1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:18:04Z",
+            "message": "(combined from similar events): Scaled down replica set fib-server-78d9fc954d from 3 to 2",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:15:49Z",
+                "name": "fib-server.18eb5fbebdd96109",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67037",
+                "uid": "41706cd8-1587-4ab1-bce4-75509376c7ef"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:17:04Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66943",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:17:04Z",
+            "message": "New size: 3; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:17:04Z",
+                "name": "fib-server.18eb5fd038d9f139",
+                "namespace": "hpa-lab",
+                "resourceVersion": "66955",
+                "uid": "fd7d45ab-ed45-4f8e-8c8b-1453a5fd52ee"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:18:04Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67022",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:18:04Z",
+            "message": "New size: 2; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:18:04Z",
+                "name": "fib-server.18eb5fde35947ba7",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67035",
+                "uid": "a2f45081-f499-4ea3-a24f-c282015dd30f"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-25T19:19:04Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "fib-server",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67103",
+                "uid": "ba364619-e342-415e-9054-32c8bcc5c7c8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-25T19:19:04Z",
+            "message": "New size: 1; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2026-11-25T19:19:04Z",
+                "name": "fib-server.18eb5fec32099f2c",
+                "namespace": "hpa-lab",
+                "resourceVersion": "67116",
+                "uid": "4e76d311-e0c4-41d7-ba7a-876c5e29b277"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "horizontal-pod-autoscaler",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

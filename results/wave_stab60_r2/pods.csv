@@ -1,0 +1,15 @@
+pod,created_t,ready_t,deleted_t,startup_s
+fib-server-78d9fc954d-n62fk,-62856.4,-19218.4,,43638.0
+fib-server-78d9fc954d-rdbcn,100.6,100.6,1330.6,0.0
+fib-server-78d9fc954d-5t6vh,130.6,130.6,370.6,0.0
+fib-server-78d9fc954d-n566w,130.6,130.6,340.6,0.0
+fib-server-78d9fc954d-7gjr2,160.6,162.6,310.6,2.0
+fib-server-78d9fc954d-qdc89,160.6,160.6,385.6,0.0
+fib-server-78d9fc954d-h7z5r,385.6,385.6,595.6,0.0
+fib-server-78d9fc954d-hnmlj,385.6,385.6,625.6,0.0
+fib-server-78d9fc954d-997wq,415.6,415.6,580.6,0.0
+fib-server-78d9fc954d-hvbzh,415.6,416.6,565.6,1.0
+fib-server-78d9fc954d-9ql8t,655.6,655.6,1210.6,0.0
+fib-server-78d9fc954d-5sgl5,730.6,731.6,1150.6,1.0
+fib-server-78d9fc954d-2mnxh,805.6,806.6,1270.6,1.0
+fib-server-78d9fc954d-jhv2f,835.6,836.6,1105.6,1.0

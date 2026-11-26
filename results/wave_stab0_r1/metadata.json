@@ -1,0 +1,23 @@
+{
+  "id": "wave_stab0_r1",
+  "scenario": "wave",
+  "config": "stab0",
+  "rep": 1,
+  "testid": "wave_stab0_r1_20261125-132327",
+  "start": 1795623807.7328084,
+  "end": 1795625427.9094784,
+  "k6_exit": 0,
+  "time_scale": 1,
+  "knobs": {
+    "hpa_manifest": "hpa-stab0.yaml",
+    "hpa_sync_period": "15s",
+    "metric_resolution": "15s"
+  },
+  "git_commit": "4728159",
+  "git_dirty": false,
+  "versions": {
+    "k8s": "v1.37.0",
+    "minikube": "v1.39.0",
+    "k6": "k6 v2.4.0 (commit/dd9395906d, go1.26.11, linux/amd64)"
+  }
+}

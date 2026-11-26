@@ -1,0 +1,5 @@
+
+requisições: 17098  (23.7/s)
+falhas:      17.20%
+descartadas: 251
+latência:    p50=11.0ms p95=5000.6ms p99=5000.9ms max=5001.0ms

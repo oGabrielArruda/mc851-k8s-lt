@@ -1,2 +1,3 @@
 # Documentos internos (plano, diário, perguntas) — não versionar
 /internal-docs/
+__pycache__/

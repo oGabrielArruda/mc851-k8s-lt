@@ -1,0 +1,23 @@
+{
+  "id": "stress_target80_r2",
+  "scenario": "stress",
+  "config": "target80",
+  "rep": 2,
+  "testid": "stress_target80_r2_20261125-173040",
+  "start": 1795638640.8206828,
+  "end": 1795639601.1555943,
+  "k6_exit": 0,
+  "time_scale": 1,
+  "knobs": {
+    "hpa_manifest": "hpa-target80.yaml",
+    "hpa_sync_period": "15s",
+    "metric_resolution": "15s"
+  },
+  "git_commit": "4728159",
+  "git_dirty": false,
+  "versions": {
+    "k8s": "v1.37.0",
+    "minikube": "v1.39.0",
+    "k6": "k6 v2.4.0 (commit/dd9395906d, go1.26.11, linux/amd64)"
+  }
+}

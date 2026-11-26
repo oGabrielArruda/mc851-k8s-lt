@@ -1,0 +1,23 @@
+{
+  "id": "spike_sync5s_r2",
+  "scenario": "spike",
+  "config": "sync5s",
+  "rep": 2,
+  "testid": "spike_sync5s_r2_20261125-153954",
+  "start": 1795631994.864658,
+  "end": 1795632715.0243855,
+  "k6_exit": 0,
+  "time_scale": 1,
+  "knobs": {
+    "hpa_manifest": "hpa-baseline.yaml",
+    "hpa_sync_period": "5s",
+    "metric_resolution": "15s"
+  },
+  "git_commit": "4728159",
+  "git_dirty": false,
+  "versions": {
+    "k8s": "v1.37.0",
+    "minikube": "v1.39.0",
+    "k6": "k6 v2.4.0 (commit/dd9395906d, go1.26.11, linux/amd64)"
+  }
+}

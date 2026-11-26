@@ -1,0 +1,5 @@
+pod,created_t,ready_t,deleted_t,startup_s
+fib-server-78d9fc954d-n62fk,-53864.2,-10226.2,,43638.0
+fib-server-78d9fc954d-b42l6,99.8,99.8,657.8,0.0
+fib-server-78d9fc954d-tz5xq,99.8,99.8,657.8,0.0
+fib-server-78d9fc954d-nkcbp,114.8,114.8,672.8,0.0

@@ -1,0 +1,222 @@
+[11:08:41] === spike_baseline_r1 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[11:08:42] controller-manager sync period: horizontal-pod-autoscaler-sync-period=5s → 15s (reinicia o controlador)
+[11:09:15] reset: removendo HPA e voltando para 1 réplica
+[11:09:22] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[11:15:30] k6 iniciando (testid=spike_baseline_r1_20261125-111530)
+[11:27:30] k6 terminou (exit=0)
+exportado: 155 pontos, 6 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_baseline_r1
+[11:27:50] === spike_baseline_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_baseline_r1
+[11:27:51] === stress_baseline_r1 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[11:27:51] reset: removendo HPA e voltando para 1 réplica
+[11:27:51] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[11:28:21] k6 iniciando (testid=stress_baseline_r1_20261125-112821)
+[11:44:22] k6 terminou (exit=0)
+exportado: 203 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_baseline_r1
+[11:44:42] === stress_baseline_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_baseline_r1
+[11:44:42] === wave_baseline_r1 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[11:44:42] reset: removendo HPA e voltando para 1 réplica
+[11:44:49] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[11:45:19] k6 iniciando (testid=wave_baseline_r1_20261125-114519)
+[12:12:19] k6 terminou (exit=0)
+exportado: 335 pontos, 15 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_baseline_r1
+[12:12:40] === wave_baseline_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_baseline_r1
+[12:12:40] === spike_sync5s_r1 (HPA=hpa-baseline.yaml, sync=5s, metric-resolution=15s, TIME_SCALE=1)
+[12:12:40] controller-manager sync period: horizontal-pod-autoscaler-sync-period=15s → 5s (reinicia o controlador)
+[12:13:14] reset: removendo HPA e voltando para 1 réplica
+[12:13:14] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[12:13:44] k6 iniciando (testid=spike_sync5s_r1_20261125-121344)
+[12:25:44] k6 terminou (exit=0)
+exportado: 155 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_sync5s_r1
+[12:26:05] === spike_sync5s_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_sync5s_r1
+[12:26:05] === wave_sync5s_r1 (HPA=hpa-baseline.yaml, sync=5s, metric-resolution=15s, TIME_SCALE=1)
+[12:26:05] reset: removendo HPA e voltando para 1 réplica
+[12:26:05] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[12:26:46] k6 iniciando (testid=wave_sync5s_r1_20261125-122646)
+[12:53:46] k6 terminou (exit=0)
+exportado: 335 pontos, 9 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_sync5s_r1
+[12:54:06] === wave_sync5s_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_sync5s_r1
+[12:54:06] === wave_stab60_r1 (HPA=hpa-stab60.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[12:54:06] controller-manager sync period: horizontal-pod-autoscaler-sync-period=5s → 15s (reinicia o controlador)
+[12:54:40] reset: removendo HPA e voltando para 1 réplica
+[12:54:41] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[12:55:11] k6 iniciando (testid=wave_stab60_r1_20261125-125511)
+[13:22:11] k6 terminou (exit=0)
+exportado: 335 pontos, 14 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab60_r1
+[13:22:31] === wave_stab60_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab60_r1
+[13:22:31] === wave_stab0_r1 (HPA=hpa-stab0.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[13:22:32] reset: removendo HPA e voltando para 1 réplica
+[13:22:32] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[13:23:27] k6 iniciando (testid=wave_stab0_r1_20261125-132327)
+[13:50:27] k6 terminou (exit=0)
+exportado: 335 pontos, 15 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab0_r1
+[13:50:48] === wave_stab0_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab0_r1
+[13:50:48] === spike_target80_r1 (HPA=hpa-target80.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[13:50:48] reset: removendo HPA e voltando para 1 réplica
+[13:50:48] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[13:51:29] k6 iniciando (testid=spike_target80_r1_20261125-135129)
+[14:03:29] k6 terminou (exit=0)
+exportado: 155 pontos, 4 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_target80_r1
+[14:03:49] === spike_target80_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_target80_r1
+[14:03:49] === stress_target80_r1 (HPA=hpa-target80.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[14:03:50] reset: removendo HPA e voltando para 1 réplica
+[14:03:50] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[14:04:20] k6 iniciando (testid=stress_target80_r1_20261125-140420)
+[14:20:20] k6 terminou (exit=0)
+exportado: 203 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_target80_r1
+[14:20:41] === stress_target80_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_target80_r1
+[14:20:41] === spike_res60s_r1 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=60s, TIME_SCALE=1)
+[14:20:41] metrics-server: metric-resolution=15s → 60s
+[14:21:49] reset: removendo HPA e voltando para 1 réplica
+[14:21:55] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[14:28:14] k6 iniciando (testid=spike_res60s_r1_20261125-142814)
+[14:40:14] k6 terminou (exit=0)
+exportado: 155 pontos, 5 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_res60s_r1
+[14:40:34] === spike_res60s_r1 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_res60s_r1
+[14:40:34] === spike_baseline_r2 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[14:40:34] metrics-server: metric-resolution=60s → 15s
+[14:40:56] reset: removendo HPA e voltando para 1 réplica
+[14:40:56] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[14:41:26] k6 iniciando (testid=spike_baseline_r2_20261125-144126)
+[14:53:26] k6 terminou (exit=0)
+exportado: 155 pontos, 6 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_baseline_r2
+[14:53:47] === spike_baseline_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_baseline_r2
+[14:53:47] === stress_baseline_r2 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[14:53:47] reset: removendo HPA e voltando para 1 réplica
+[14:53:47] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[14:54:32] k6 iniciando (testid=stress_baseline_r2_20261125-145432)
+[15:10:33] k6 terminou (exit=0)
+exportado: 203 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_baseline_r2
+[15:10:53] === stress_baseline_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_baseline_r2
+[15:10:53] === wave_baseline_r2 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[15:10:54] reset: removendo HPA e voltando para 1 réplica
+[15:11:00] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[15:11:30] k6 iniciando (testid=wave_baseline_r2_20261125-151130)
+[15:38:30] k6 terminou (exit=0)
+exportado: 335 pontos, 15 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_baseline_r2
+[15:38:51] === wave_baseline_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_baseline_r2
+[15:38:51] === spike_sync5s_r2 (HPA=hpa-baseline.yaml, sync=5s, metric-resolution=15s, TIME_SCALE=1)
+[15:38:51] controller-manager sync period: horizontal-pod-autoscaler-sync-period=15s → 5s (reinicia o controlador)
+[15:39:24] reset: removendo HPA e voltando para 1 réplica
+[15:39:24] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[15:39:54] k6 iniciando (testid=spike_sync5s_r2_20261125-153954)
+[15:51:55] k6 terminou (exit=0)
+exportado: 155 pontos, 6 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_sync5s_r2
+[15:52:15] === spike_sync5s_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_sync5s_r2
+[15:52:15] === wave_sync5s_r2 (HPA=hpa-baseline.yaml, sync=5s, metric-resolution=15s, TIME_SCALE=1)
+[15:52:15] reset: removendo HPA e voltando para 1 réplica
+[15:52:16] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[15:52:56] k6 iniciando (testid=wave_sync5s_r2_20261125-155256)
+[16:19:56] k6 terminou (exit=0)
+exportado: 335 pontos, 7 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_sync5s_r2
+[16:20:16] === wave_sync5s_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_sync5s_r2
+[16:20:16] === wave_stab60_r2 (HPA=hpa-stab60.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[16:20:17] controller-manager sync period: horizontal-pod-autoscaler-sync-period=5s → 15s (reinicia o controlador)
+[16:20:50] reset: removendo HPA e voltando para 1 réplica
+[16:20:51] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[16:21:21] k6 iniciando (testid=wave_stab60_r2_20261125-162121)
+[16:48:21] k6 terminou (exit=0)
+exportado: 335 pontos, 14 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab60_r2
+[16:48:41] === wave_stab60_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab60_r2
+[16:48:42] === wave_stab0_r2 (HPA=hpa-stab0.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[16:48:42] reset: removendo HPA e voltando para 1 réplica
+[16:48:42] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[16:49:37] k6 iniciando (testid=wave_stab0_r2_20261125-164937)
+[17:16:38] k6 terminou (exit=0)
+exportado: 335 pontos, 18 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab0_r2
+[17:16:58] === wave_stab0_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab0_r2
+[17:16:58] === spike_target80_r2 (HPA=hpa-target80.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[17:16:58] reset: removendo HPA e voltando para 1 réplica
+[17:16:59] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[17:17:49] k6 iniciando (testid=spike_target80_r2_20261125-171749)
+[17:29:49] k6 terminou (exit=0)
+exportado: 155 pontos, 5 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_target80_r2
+[17:30:10] === spike_target80_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_target80_r2
+[17:30:10] === stress_target80_r2 (HPA=hpa-target80.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[17:30:10] reset: removendo HPA e voltando para 1 réplica
+[17:30:10] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[17:30:40] k6 iniciando (testid=stress_target80_r2_20261125-173040)
+[17:46:41] k6 terminou (exit=0)
+exportado: 203 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_target80_r2
+[17:47:01] === stress_target80_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_target80_r2
+[17:47:01] === spike_res60s_r2 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=60s, TIME_SCALE=1)
+[17:47:01] metrics-server: metric-resolution=15s → 60s
+[17:48:02] reset: removendo HPA e voltando para 1 réplica
+[17:48:11] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[17:48:41] k6 iniciando (testid=spike_res60s_r2_20261125-174841)
+[18:00:41] k6 terminou (exit=0)
+exportado: 155 pontos, 13 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_res60s_r2
+[18:01:02] === spike_res60s_r2 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_res60s_r2
+[18:01:02] === spike_baseline_r3 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[18:01:02] metrics-server: metric-resolution=60s → 15s
+[18:01:23] reset: removendo HPA e voltando para 1 réplica
+[18:01:24] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[18:02:14] k6 iniciando (testid=spike_baseline_r3_20261125-180214)
+[18:14:14] k6 terminou (exit=0)
+exportado: 155 pontos, 6 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_baseline_r3
+[18:14:35] === spike_baseline_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_baseline_r3
+[18:14:35] === stress_baseline_r3 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[18:14:35] reset: removendo HPA e voltando para 1 réplica
+[18:14:35] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[18:15:05] k6 iniciando (testid=stress_baseline_r3_20261125-181505)
+[18:31:06] k6 terminou (exit=0)
+exportado: 203 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_baseline_r3
+[18:31:26] === stress_baseline_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_baseline_r3
+[18:31:26] === wave_baseline_r3 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[18:31:27] reset: removendo HPA e voltando para 1 réplica
+[18:31:33] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[18:32:03] k6 iniciando (testid=wave_baseline_r3_20261125-183203)
+[18:59:03] k6 terminou (exit=0)
+exportado: 335 pontos, 14 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_baseline_r3
+[18:59:24] === wave_baseline_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_baseline_r3
+[18:59:24] === spike_sync5s_r3 (HPA=hpa-baseline.yaml, sync=5s, metric-resolution=15s, TIME_SCALE=1)
+[18:59:24] controller-manager sync period: horizontal-pod-autoscaler-sync-period=15s → 5s (reinicia o controlador)
+[18:59:56] reset: removendo HPA e voltando para 1 réplica
+[18:59:56] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[19:00:26] k6 iniciando (testid=spike_sync5s_r3_20261125-190026)
+[19:12:26] k6 terminou (exit=0)
+exportado: 155 pontos, 6 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_sync5s_r3
+[19:12:47] === spike_sync5s_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_sync5s_r3
+[19:12:47] === wave_sync5s_r3 (HPA=hpa-baseline.yaml, sync=5s, metric-resolution=15s, TIME_SCALE=1)
+[19:12:47] reset: removendo HPA e voltando para 1 réplica
+[19:12:48] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[19:13:18] k6 iniciando (testid=wave_sync5s_r3_20261125-191318)
+[19:40:18] k6 terminou (exit=0)
+exportado: 335 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_sync5s_r3
+[19:40:38] === wave_sync5s_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_sync5s_r3
+[19:40:38] === wave_stab60_r3 (HPA=hpa-stab60.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[19:40:39] controller-manager sync period: horizontal-pod-autoscaler-sync-period=5s → 15s (reinicia o controlador)
+[19:41:13] reset: removendo HPA e voltando para 1 réplica
+[19:41:13] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[19:41:43] k6 iniciando (testid=wave_stab60_r3_20261125-194143)
+[20:08:43] k6 terminou (exit=0)
+exportado: 335 pontos, 15 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab60_r3
+[20:09:04] === wave_stab60_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab60_r3
+[20:09:04] === wave_stab0_r3 (HPA=hpa-stab0.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[20:09:04] reset: removendo HPA e voltando para 1 réplica
+[20:09:04] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[20:09:34] k6 iniciando (testid=wave_stab0_r3_20261125-200934)
+[20:36:35] k6 terminou (exit=0)
+exportado: 335 pontos, 18 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab0_r3
+[20:36:55] === wave_stab0_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/wave_stab0_r3
+[20:36:55] === spike_target80_r3 (HPA=hpa-target80.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[20:36:55] reset: removendo HPA e voltando para 1 réplica
+[20:36:56] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[20:37:46] k6 iniciando (testid=spike_target80_r3_20261125-203746)
+[20:49:46] k6 terminou (exit=0)
+exportado: 155 pontos, 5 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_target80_r3
+[20:50:07] === spike_target80_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_target80_r3
+[20:50:07] === stress_target80_r3 (HPA=hpa-target80.yaml, sync=15s, metric-resolution=15s, TIME_SCALE=1)
+[20:50:07] reset: removendo HPA e voltando para 1 réplica
+[20:50:07] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[20:50:37] k6 iniciando (testid=stress_target80_r3_20261125-205037)
+[21:06:38] k6 terminou (exit=0)
+exportado: 203 pontos, 8 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_target80_r3
+[21:06:58] === stress_target80_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/stress_target80_r3
+[21:06:58] === spike_res60s_r3 (HPA=hpa-baseline.yaml, sync=15s, metric-resolution=60s, TIME_SCALE=1)
+[21:06:58] metrics-server: metric-resolution=15s → 60s
+[21:08:09] reset: removendo HPA e voltando para 1 réplica
+[21:08:16] aguardando HPA estável (métrica disponível, 1 réplica, CPU < 20%)
+[21:08:46] k6 iniciando (testid=spike_res60s_r3_20261125-210846)
+[21:20:46] k6 terminou (exit=0)
+exportado: 155 pontos, 13 pods → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_res60s_r3
+[21:21:06] === spike_res60s_r3 concluído → /home/gabrielarruda/hd/projects/unicamp/mc851/results/spike_res60s_r3
